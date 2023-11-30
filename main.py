@@ -55,6 +55,9 @@ from sklearn.neighbors import LocalOutlierFactor
 # define a random state
 state = 1
 
+# define a random state
+state = 1
+
 # define the outlier detection methods
 classifiers = {
     # contamination is the number of outliers we think there are
@@ -65,6 +68,7 @@ classifiers = {
     'Local Outlier Factor': LocalOutlierFactor(
     n_neighbors = 20,
     contamination = outlier_fraction)
+}
   n_outliers = len(fraud)
 
 for i, (clf_name, clf) in enumerate(classifiers.items()):
