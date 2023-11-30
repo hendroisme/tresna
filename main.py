@@ -96,13 +96,3 @@ for i, (clf_name, clf) in enumerate(classifiers.items()):
   # define a random state
 state = 1
 
-# define the outlier detection methods
-classifiers = {
-    # contamination is the number of outliers we think there are
-    'Isolation Forest': IsolationForest(max_samples = len(X),
-                                       contamination = outlier_fraction,
-                                       random_state = state),
-    # number of neighbors to consider, the higher the percentage of outliers the higher you want to make this number
-    'Local Outlier Factor': LocalOutlierFactor(
-    n_neighbors = 20,
-    contamination = outlier_fraction)
