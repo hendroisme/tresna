@@ -1,0 +1,2 @@
+# tresna
+draud-detection-project
