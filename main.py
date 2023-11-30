@@ -69,8 +69,8 @@ classifiers = {
     n_neighbors = 20,
     contamination = outlier_fraction)
 }
-  n_outliers = len(fraud)
 
+n_outliers = len(fraud)
 for i, (clf_name, clf) in enumerate(classifiers.items()):
 
     # fit the data and tag outliers
